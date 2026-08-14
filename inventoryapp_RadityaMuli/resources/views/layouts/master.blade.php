@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>@yield('title')</title>
-  <link rel="shortcut icon" type="image/png" href="{{ asset('template/SEODash-1.0.0/src/assets/images/logos/seodashlogo.png') }}" />
-  <link rel="stylesheet" href="../../node_modules/simplebar/dist/simplebar.min.css">
-  <link rel="stylesheet" href="{{ asset('template/SEODash-1.0.0/src/assets/css/styles.min.css') }}" />
+  <link rel="shortcut icon" type="image/png" href="{{ asset('template/template/src/assets/images/logos/seodashlogo.png') }}" />
+  <link rel="stylesheet" href="{{ asset('template/template/src/node_modules/simplebar/dist/simplebar.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('template/template/src/assets/css/styles.min.css') }}" />
 </head>
 
 <body>
@@ -20,12 +20,12 @@
     <!--  Main wrapper -->
     <div class="body-wrapper">
       <!--  Header Start -->
-        @include('partials.header')
+      @include('partials.header')
       <!--  Header End -->
       <div class="container-fluid">
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title fw-semibold mb-4">@yield('title')</h5>
+            <h5 class="card-title fw-semibold mb-4">@yield('card-title')</h5>
             @yield('content')
           </div>
         </div>
@@ -37,11 +37,11 @@
       </div>
     </div>
   </div>
-  <script src="{{ asset('template/SEODash-1.0.0/src/assets/libs/jquery/dist/jquery.min.js') }}"></script>
-  <script src="{{ asset('template/SEODash-1.0.0/src/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
-  <script src="{{ asset('template/SEODash-1.0.0/src/assets/libs/simplebar/dist/simplebar.js') }}"></script>
-  <script src="{{ asset('template/SEODash-1.0.0/src/assets/js/sidebarmenu.js') }}"></script>
-  <script src="{{ asset('template/SEODash-1.0.0/src/assets/js/app.min.js') }}"></script>
+  <script src="{{ asset('template/template/src/assets/libs/jquery/dist/jquery.min.js') }}"></script>
+  <script src="{{ asset('template/template/src/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('template/template/src/assets/libs/simplebar/dist/simplebar.js') }}"></script>
+  <script src="{{ asset('template/template/src/assets/js/sidebarmenu.js') }}"></script>
+  <script src="{{ asset('template/template/src/assets/js/app.min.js') }}"></script>
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 
